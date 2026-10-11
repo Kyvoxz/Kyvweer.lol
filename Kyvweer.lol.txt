@@ -1,6 +1,6 @@
 local arguments = table.pack(...)
 local sharedEnv = getgenv and getgenv() or _G
-local previous = rawget(sharedEnv, 'Unnamed Enhancements - Kyvweer.lol')
+local previous = rawget(sharedEnv, 'Kyvweer.lol - Kyvweer.lol')
 
 if type(previous) == 'table' and (previous.status == 'starting' or previous.status == 'entry_returned') then
     return previous
@@ -16,7 +16,7 @@ local control = {
     stopped = false,
 }
 
-sharedEnv['Unnamed Enhancements - Kyvweer.lol'] = control
+sharedEnv['Kyvweer.lol - Kyvweer.lol'] = control
 
 local previousLoaded = rawget(sharedEnv, 'UE_LOADED')
 local previousLibrary = rawget(sharedEnv, 'Library')
@@ -172,7 +172,7 @@ end
 
 print[[이 스크립트는 무료로 제공됩니다
 
-discord.gg/discord.gg/vKXWdGT8pc]]
+//discord.gg/TwFPBxWb2V]]
 
 function Backend.initialize(data)
     local root = data[1]
